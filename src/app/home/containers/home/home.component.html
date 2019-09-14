@@ -1,0 +1,3 @@
+<app-home-page [moviesList]="nowPlayingMoviesList$ | async" [upcomingList]="upcomingMoviesList$ | async" [theaterList]="theaterList$ | async"
+  [userPreference]="userPreference$ | async" (getNewNowPlayingMovies)="getNewSetofNowPlayingMovies($event)"
+  (getNewUpcomingMovies)="getNewSetofComingMovies($event)"></app-home-page>
